@@ -45,7 +45,7 @@ addTxt.addEventListener('keyup', function (element) {
 });
 addBtn.addEventListener('click', function (e) {
     let text = document.getElementById('addTxt').value;
-    console.log(text);
+    // console.log(text);
     if (text != null && text.length != 0) {
         let s = localStorage.getItem('notes');
         myObj = [];
@@ -60,7 +60,33 @@ addBtn.addEventListener('click', function (e) {
 
     }
 });
+// addBtn.addEventListener('mouseout', function (e) {
+//     for(let i=0;i<3;i++)
+//     {
+//         let text = 100*Math.random();
+//         // console.log(text);
+        
+//         let s = localStorage.getItem('notes');
+//         myObj = [];
+//         if (s != null)
+//         myObj = JSON.parse(s);
+//         myObj.push(text);
+//         localStorage.setItem('notes', JSON.stringify(myObj));
+//         document.getElementById('addTxt').value = "";
+//             // console.log("hi");
+//             // console.log(localStorage.getItem('notes'));
+        
 
+        
+//     }
+//     showNotes();
+    
+// });
+
+// function deleteNote()
+// {
+    
+// }
 function deleteNote(index) // inde is id of the button
 {
     let s = localStorage.getItem('notes');
@@ -69,6 +95,14 @@ function deleteNote(index) // inde is id of the button
     localStorage.setItem('notes', JSON.stringify(myObj));
     showNotes();
 }
+let delBtn = document.getElementById('delBtn');
+
+delBtn.addEventListener('click',function(event){
+    localStorage.clear();
+    showNotes();
+});
+
+
 
 
 
