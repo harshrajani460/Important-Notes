@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my first quiz</title>
+        <meta lang="en" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sty.css">
+        <script src="javascriptpart.js" ></script>
+    </head>
+
+    <body style="font-family:Verdana;">
+
+        
+<div style="background-color:#83b8e9;padding:15px; text-align: center;">
+    <h1>Quiz</h1>
+    
+  </div>
+    
+    <div class="rul">
+        <h4>su karvanu chhe</h4>
+        <p>photo chhe ane eni bajuma lakhelu chhe tamare odd number na phota ma phota ma j prani hoy enu nam lakhvanu ane even ma j niche hoy enu</p>
+
+    </div>
+
+<section >
+        
+    <h5 class="leftotleft">1)</h5>
+    <img src="../quiz/chito.jfif" alt="Chito" class="left">
+    <div class="cent">
+        <p>dipdo</p>
+    </div>
+
+   <div class="right">
+    
+       <input type="text" id="q1">
+       <label for="q1" style="visibility:hidden;" id="lbl1">sacho vala</label>
+        <br>
+       <button type="submit" onclick="chek('q1','chito','lbl1')">submit</button>
+   </div>
+
+</section>
+
+
+<section>
+    <br>
+    <h5 class="leftotleft">2)</h5>
+    <img src="../quiz/bander.jfif" alt="vandro" class="left">
+    <div class="cent">
+        <p>hathi</p>
+    </div>
+
+   <div class="right">
+    
+       <input type="text" id="q2">
+       <label for="q2" style="visibility:hidden;" id="lbl2">sacho vala</label>
+        <br>
+       <button type="submit" onclick="chek('q2','hathi','lbl2')">submit</button>
+   </div>
+
+</section>
+
+
+
+<section>
+    <br>
+    <h5 class="leftotleft">3)</h5>
+    <img src="../quiz/panda.jfif" alt="panda" class="left">
+    <div class="cent">
+        <p>rinchh</p>
+    </div>
+
+   <div class="right">
+    
+       <input type="text" id="q3">
+       <label for="q3" style="visibility:hidden;" id="lbl3">sacho vala</label>
+        <br>
+       <button type="submit" onclick="chek('q3','panda','lbl3')">submit</button>
+   </div>
+
+</section>
+
+<button type="submit" onclick="result()" >submit</button>
+<div class="ff">
+<p style="visibility: hidden ; font-size: small;" id="cor"> sacha jawab:</p>
+<p  style="visibility: hidden; font-size: small;" id="corr">athiya :</p>
+</div>
+
+
+<footer>
+<p>bas have peli ma aatlu j hoy</p>
+<p>bhul chuk maf karjo</p>
+<p><a href="mailto:201801156@daiict.ac.com">Send email will reply as soon as possible</a></p>
+</footer>
+
+
+</body>
+
+
+</html>     
